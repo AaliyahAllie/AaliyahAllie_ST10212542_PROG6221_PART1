@@ -24,6 +24,13 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             Steps = new List<string>();
         }
 
+        //this method allows for the capturing of ingredients into the recipe
+        public void AddIngredients(string name,int quatity,string unitOfMeasurement)
+        {
+            IngredientNames.Add(name);
+            IngredientQuantities.Add(quatity);
+            UnitOfMeasurements.Add(unitOfMeasurement);
+        }
 
 
     }
