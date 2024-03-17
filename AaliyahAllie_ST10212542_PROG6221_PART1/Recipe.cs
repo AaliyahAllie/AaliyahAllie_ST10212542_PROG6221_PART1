@@ -14,6 +14,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
         public List<string> UnitOfMeasurements { get; set; }
         public List<String> Steps { get; set; }
 
+        //method to capture into array list
         public Recipe(string recipeName)
         {
             recipeName = recipeName;
@@ -22,6 +23,8 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             UnitOfMeasurements = new List<string>();
             Steps = new List<string>();
         }
+
+
 
     }
 }
