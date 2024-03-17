@@ -32,6 +32,12 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             UnitOfMeasurements.Add(unitOfMeasurement);
         }
 
+        //this method will allow for the users input to get captures to add the steps into the program
+        public void AddStep (string step)
+        {
+            Steps.Add(step);
+        }
+
 
     }
 }
