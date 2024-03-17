@@ -38,6 +38,14 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             Steps.Add(step);
         }
 
+        //this method Allows the capturing of the recipes details to be fully displayed on the system
+        public void DisplayRecipe()
+        {
+            Console.WriteLine("***********************************");
+            Console.WriteLine("RECIPE DETAILS");
+            Console.WriteLine("***********************************");
+
+        }
 
     }
 }
