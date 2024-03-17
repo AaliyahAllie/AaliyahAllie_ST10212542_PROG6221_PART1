@@ -8,11 +8,20 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
 {
     public class Recipe
     {
-        public string recipeName { get; set; }
-        public List<string> ingredientNames { get; set; }
-        public List<int> ingredientQuantities { get; set; }
+        public string RecipeName { get; set; }
+        public List<string> IngredientNames { get; set; }
+        public List<int> IngredientQuantities { get; set; }
         public List<string> UnitOfMeasurements { get; set; }
         public List<String> Steps { get; set; }
+
+        public Recipe(string recipeName)
+        {
+            recipeName = recipeName;
+            IngredientNames = new List<string>();
+            IngredientQuantities = new List<int>();
+            UnitOfMeasurements = new List<string>();
+            Steps = new List<string>();
+        }
 
     }
 }
