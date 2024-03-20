@@ -61,7 +61,15 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             Console.WriteLine("***********************************");
             Console.WriteLine();
         }
-
+        //The following coding method will scale the method to the the following factors {0.5,2,3}
+        public void ScaleRecipe(double factor)
+        {
+            //this for loop will take the ingredient quantities into account and scale them to the factors that the user inserts
+            for(int i=0;i < IngredientQuantities.Count;i++)
+            {
+                IngredientQuantities[i] = (int)(IngredientQuantities[i] * factor);
+            }
+        }
 
     }
 }
