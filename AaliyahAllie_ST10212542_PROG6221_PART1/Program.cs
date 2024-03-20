@@ -122,7 +122,21 @@
                             recipe.ScaleRecipe(scaleFactor);
                         }
                         Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
+                        Console.WriteLine();
                         break;
+
+                    case 4:
+                        Console.WriteLine("***********************************************");
+                        Console.WriteLine("RESET RECIPE TO ORIGINAL VALUES");
+                        Console.WriteLine("***********************************************");
+                        foreach(Recipe recipe in recipes)
+                        {
+                            recipe.ResetRecipe(recipe);
+                        }
+                        Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
+                        Console.WriteLine();
+                        break ;
+                    case 5: 
                 }
             }
         }
