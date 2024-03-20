@@ -136,7 +136,14 @@
                         Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
                         Console.WriteLine();
                         break ;
-                    case 5: 
+                    case 5:
+                        Console.WriteLine("***********************************************");
+                        Console.WriteLine("CLEAR RECIPE DATA:");
+                        Console.WriteLine("***********************************************");
+                        recipes.Clear();
+                        Console.WriteLine("RECIPE DATA SUCCESSFULLY CLEARED");
+                        Console.WriteLine();
+                        break;
                 }
             }
         }
