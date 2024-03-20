@@ -71,5 +71,23 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             }
         }
 
+        //The following method was created in order to reset the Ingredient Quantities back to its original values
+        public void ResetRecipe(Recipe originalRecipe)
+        {
+            //The method first clears the recipes details to be blank
+            IngredientNames.Clear();
+            IngredientQuantities.Clear();
+            UnitOfMeasurements.Clear();
+            Steps.Clear();
+
+            //And then the method resets the values to the original information entered by the user before the scale
+            RecipeName = originalRecipe.RecipeName;
+            IngredientNames.AddRange(originalRecipe.IngredientNames);
+            IngredientQuantities.AddRange(originalRecipe.IngredientNames);
+            UnitOfMeasurements.AddRange(originalRecipe.UnitOfMeasurements);
+            Steps.AddRange(originalRecipe.Steps);
+
+        }
+
     }
 }
