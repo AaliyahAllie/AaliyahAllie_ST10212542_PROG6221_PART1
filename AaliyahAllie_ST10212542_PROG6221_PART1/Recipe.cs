@@ -83,7 +83,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             //And then the method resets the values to the original information entered by the user before the scale
             RecipeName = originalRecipe.RecipeName;
             IngredientNames.AddRange(originalRecipe.IngredientNames);
-            IngredientQuantities.AddRange(originalRecipe.IngredientNames);
+            IngredientQuantities.AddRange(originalRecipe.IngredientQuantities);
             UnitOfMeasurements.AddRange(originalRecipe.UnitOfMeasurements);
             Steps.AddRange(originalRecipe.Steps);
 
