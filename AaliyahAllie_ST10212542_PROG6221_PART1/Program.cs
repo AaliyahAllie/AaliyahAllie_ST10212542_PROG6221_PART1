@@ -6,6 +6,14 @@
         {
             //Array list to store values
             List<Recipe> recipes = new List<Recipe>();
+            int choice = 0;
+
+            while (true)
+            {
+                Console.WriteLine("**************************************");
+                Console.WriteLine("Welcome To Your Recipe Application");
+                Console.WriteLine("**************************************");
+            }
         }
     }
     
