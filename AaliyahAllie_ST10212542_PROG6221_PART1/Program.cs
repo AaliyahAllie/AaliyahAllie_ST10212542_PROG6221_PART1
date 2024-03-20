@@ -144,6 +144,16 @@
                         Console.WriteLine("RECIPE DATA SUCCESSFULLY CLEARED");
                         Console.WriteLine();
                         break;
+                    case 6:
+                        Console.WriteLine("THANK YOU FOR USING THIS APPLICATION");
+                        Console.WriteLine("PROGRAM WILL NOW CLOSE");
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.WriteLine("INVALID CHOICE.PLEASE ENTER A VALID NUMBER");
+                        break;
+
                 }
             }
         }
