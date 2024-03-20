@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-
+            //Array list to store values
+            List<Recipe> recipes = new List<Recipe>();
         }
     }
     
