@@ -44,8 +44,24 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             Console.WriteLine("***********************************");
             Console.WriteLine("RECIPE DETAILS");
             Console.WriteLine("***********************************");
-
+            //This calls the recipe name from the previous code and displays it
+            Console.WriteLine("Recipe Name: " + RecipeName);
+            //This calls the stored details of the ingredients such as the ingredients names, ingredient quantities and unit of measurements
+            Console.WriteLine("Ingredients: ");
+            for(int i = 0;i < IngredientNames.Count;i++)
+            {
+                Console.WriteLine($"{IngredientNames[i]} - {IngredientQuantities[i]} {UnitOfMeasurements[i]}");
+            }
+            //This calls the stored user input and displays the details of the steps
+            Console.WriteLine("Steps: ");
+            for(int i = 0;i < Steps.Count;i++) 
+            {
+                Console.WriteLine($"{i + 1}.{Steps[i]}");
+            }
+            Console.WriteLine("***********************************");
+            Console.WriteLine();
         }
+
 
     }
 }
