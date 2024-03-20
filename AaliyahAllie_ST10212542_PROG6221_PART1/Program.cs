@@ -35,6 +35,14 @@
                 Console.WriteLine("4.Reset recipe to original values");
                 Console.WriteLine("5.Clear recipe data");
                 Console.WriteLine("6.Exit Program");
+                Console.WriteLine("***********************************************");
+
+                int userChoice;
+                if(!int.TryParse(Console.ReadLine(),out userChoice))
+                {
+                    Console.WriteLine("INVALID CHOICE.PLEASE ENTER A VALID NUMBER");
+                    continue;
+                }
             }
         }
     }
