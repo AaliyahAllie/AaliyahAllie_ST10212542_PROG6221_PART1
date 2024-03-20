@@ -54,8 +54,9 @@
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("Enter recipe name: ");
                         string recipeName = Console.ReadLine();
+                        Recipe newRecipe = new Recipe(recipeName); // Instantiate a new Recipe object
                         Console.WriteLine("Enter number of ingredients: ");
-                        int numIngredients = Convert.ToInt32(Console.ReadLine());
+                        int numIngredients;
                         if (!int.TryParse(Console.ReadLine(), out numIngredients))
                         {
                             Console.WriteLine("INVALID INPUT.PLEASE ENTER A VALID NUMBER.");
@@ -63,19 +64,19 @@
                         }
                         for (int i = 0; i < numIngredients; i++)
                         {
-                            Console.WriteLine($"Ingredient {i +1}");
+                            Console.WriteLine($"Ingredient {i + 1}");
                             Console.WriteLine("Name: ");
-                            string ingredientName  = Console.ReadLine();
+                            string ingredientName = Console.ReadLine();
                             Console.WriteLine("Quantity: ");
                             int ingredientQuantity;
-                            if(!int.TryParse(Console.ReadLine(),out ingredientQuantity))
+                            if (!int.TryParse(Console.ReadLine(), out ingredientQuantity))
                             {
                                 Console.WriteLine("Invalid input.Please enter a valid number.");
                                 continue;
                             }
-                            Console.WriteLine("Unit of Measurement (ml/mg/teaspoon/tablespoon/cup") ;
+                            Console.WriteLine("Unit of Measurement (ml/mg/teaspoon/tablespoon/cup)");
                             string unitOfMeasurement = Console.ReadLine();
-                            newRecipe.AddIngredient(ingredientName, ingredientQuantity, unitOfMeasurement);
+                            newRecipe.AddIngredients(ingredientName, ingredientQuantity, unitOfMeasurement);
                         }
                         Console.WriteLine("Enter the number of steps: ");
                         int numSteps;
@@ -94,6 +95,7 @@
                         Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
                         Console.WriteLine();
                         break;
+
 
                     case 2:
                         Console.WriteLine("***********************************************");
