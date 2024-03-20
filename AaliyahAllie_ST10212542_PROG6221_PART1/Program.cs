@@ -92,6 +92,18 @@
                         }
                         recipes.Add(newRecipe);
                         Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
+                        Console.WriteLine();
+                        break;
+
+                    case 2:
+                        Console.WriteLine("***********************************************");
+                        Console.WriteLine("DISPLAYING RECIPE DETAILS");
+                        Console.WriteLine("***********************************************");
+                        foreach(Recipe recipe in recipes)
+                        {
+                            recipe.DisplayRecipe();
+                            Console.WriteLine();
+                        }
                         break;
                 }
             }
