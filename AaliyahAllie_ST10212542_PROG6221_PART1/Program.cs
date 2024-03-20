@@ -97,13 +97,31 @@
 
                     case 2:
                         Console.WriteLine("***********************************************");
-                        Console.WriteLine("DISPLAYING RECIPE DETAILS");
+                        Console.WriteLine("DISPLAYING RECIPE DETAILS:");
                         Console.WriteLine("***********************************************");
                         foreach(Recipe recipe in recipes)
                         {
                             recipe.DisplayRecipe();
                             Console.WriteLine();
                         }
+                        break;
+
+                    case 3:
+                        Console.WriteLine("***********************************************");
+                        Console.WriteLine("SCALE RECIPE:");
+                        Console.WriteLine("***********************************************");
+                        Console.WriteLine("Enter the scaling factor(0.5,2,3): ");
+                        double scaleFactor;
+                        if(!double.TryParse(Console.ReadLine(),out scaleFactor))
+                        {
+                            Console.WriteLine("Invalid input.Enter a valid number");
+                            continue;
+                        }
+                        foreach(Recipe recipe in recipes)
+                        {
+                            recipe.ScaleRecipe(scaleFactor);
+                        }
+                        Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
                         break;
                 }
             }
