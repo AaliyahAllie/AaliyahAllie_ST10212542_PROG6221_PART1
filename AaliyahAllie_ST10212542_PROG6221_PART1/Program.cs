@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace AaliyahAllie_ST10212542_PROG6221_PART1
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+    
+}
