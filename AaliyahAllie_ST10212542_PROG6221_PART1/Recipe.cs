@@ -8,7 +8,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
         public string RecipeName { get; set; }
         public List<string> IngredientNames { get; set; }
         public List<int> IngredientQuantities { get; set; }
-        public List<int> OriginalQuantities { get; set; } // Store original quantities
+        public List<int> OriginalQuantities { get; set; } 
         public List<string> UnitOfMeasurements { get; set; }
         public List<string> Steps { get; set; }
 
@@ -17,7 +17,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             RecipeName = recipeName;
             IngredientNames = new List<string>();
             IngredientQuantities = new List<int>();
-            OriginalQuantities = new List<int>(); // Initialize original quantities list
+            OriginalQuantities = new List<int>(); 
             UnitOfMeasurements = new List<string>();
             Steps = new List<string>();
         }
@@ -26,7 +26,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
         {
             IngredientNames.Add(name);
             IngredientQuantities.Add(quantity);
-            OriginalQuantities.Add(quantity); // Store original quantity
+            OriginalQuantities.Add(quantity); 
             UnitOfMeasurements.Add(unitOfMeasurement);
         }
 
@@ -59,7 +59,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
         {
             for (int i = 0; i < IngredientQuantities.Count; i++)
             {
-                IngredientQuantities[i] = (int)(OriginalQuantities[i] * factor); // Update current quantities
+                IngredientQuantities[i] = (int)(OriginalQuantities[i] * factor); 
             }
         }
 
