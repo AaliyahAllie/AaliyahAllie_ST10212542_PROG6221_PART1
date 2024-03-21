@@ -65,7 +65,7 @@
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("Enter recipe name: ");
                         string recipeName = Console.ReadLine();
-                        Recipe newRecipe = new Recipe(recipeName); // Instantiate a new Recipe object
+                        Recipe newRecipe = new Recipe(recipeName); 
                         Console.WriteLine("Enter number of ingredients: ");
                         int numIngredients;
                         if (!int.TryParse(Console.ReadLine(), out numIngredients))
