@@ -133,7 +133,7 @@
                         Console.WriteLine("***********************************************");
                         foreach(Recipe recipe in recipes)
                         {
-                            recipe.ResetRecipe(recipe);
+                            recipe.ResetRecipe();
                         }
                         Console.WriteLine("RECIPE SUCCESSFULLY SAVED");
                         Console.WriteLine();
@@ -147,17 +147,31 @@
                         Console.WriteLine();
                         break;
                     case 6:
-                        Console.WriteLine("THANK YOU FOR USING THIS APPLICATION");
-                        Console.WriteLine("PROGRAM WILL NOW CLOSE");
-                        Environment.Exit(0);
+                        Console.WriteLine("Are you sure you want to exit? (y/n)");
+                        string exitConfirmation = Console.ReadLine().ToLower();
+                        if (exitConfirmation == "y")
+                        {
+                            Console.WriteLine("THANK YOU FOR USING THIS APPLICATION");
+                            Console.WriteLine("PROGRAM WILL NOW CLOSE");
+                            Environment.Exit(0);
+                        }
+                        else if (exitConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid input. Returning to the main menu.");
+                        }
                         break;
 
                     default:
                         Console.WriteLine("INVALID CHOICE.PLEASE ENTER A VALID NUMBER");
                         break;
-
                 }
+
             }
+            
         }
     }
     
