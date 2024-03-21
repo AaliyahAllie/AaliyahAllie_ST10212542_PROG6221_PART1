@@ -49,6 +49,17 @@
                 switch(userChoice) 
                 {
                     case 1:
+                        Console.WriteLine("Are you sure you want to enter a new recipe?(y/n)");
+                        string newRecipeConfirmation = Console.ReadLine().ToLower();
+                        if (newRecipeConfirmation == "y")
+                        {
+                            Console.WriteLine("Now Entering Recipe");
+                        }
+                        else if (newRecipeConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("ENTER NEW RECIPE DETAILS");
                         Console.WriteLine("***********************************************");
@@ -98,6 +109,17 @@
 
 
                     case 2:
+                        Console.WriteLine("Are you sure ypu want to display the recipe?(y/n)");
+                        string displayConfirmation = Console.ReadLine().ToLower();
+                        if (displayConfirmation == "y")
+                        {
+                            Console.WriteLine("Now Displaying Recipe");
+                        }
+                        else if (displayConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("DISPLAYING RECIPE DETAILS:");
                         Console.WriteLine("***********************************************");
@@ -109,6 +131,17 @@
                         break;
 
                     case 3:
+                        Console.WriteLine("Are you sure ypu want to scale the recipe?(y/n)");
+                        string scaleConfirmation = Console.ReadLine().ToLower();
+                        if (scaleConfirmation == "y")
+                        {
+                            Console.WriteLine("Now Scaling Recipe");
+                        }
+                        else if (scaleConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("SCALE RECIPE:");
                         Console.WriteLine("***********************************************");
@@ -128,6 +161,17 @@
                         break;
 
                     case 4:
+                        Console.WriteLine("Are you sure ypu want to reset the recipe?(y/n)");
+                        string resetConfirmation = Console.ReadLine().ToLower();
+                        if (resetConfirmation == "y")
+                        {
+                            Console.WriteLine("Now Reseting Recipe");
+                        }
+                        else if (resetConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("RESET RECIPE TO ORIGINAL VALUES");
                         Console.WriteLine("***********************************************");
@@ -139,6 +183,17 @@
                         Console.WriteLine();
                         break ;
                     case 5:
+                        Console.WriteLine("Are you sure ypu want to clear the recipe?(y/n)");
+                        string clearConfirmation = Console.ReadLine().ToLower();
+                        if (clearConfirmation == "y")
+                        {
+                            Console.WriteLine("Now Clearing Recipe");
+                        }
+                        else if (clearConfirmation == "n")
+                        {
+                            Console.WriteLine("Returning to the main menu.");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("CLEAR RECIPE DATA:");
                         Console.WriteLine("***********************************************");
@@ -158,10 +213,12 @@
                         else if (exitConfirmation == "n")
                         {
                             Console.WriteLine("Returning to the main menu.");
+                            continue;
                         }
                         else
                         {
                             Console.WriteLine("Invalid input. Returning to the main menu.");
+                            continue;
                         }
                         break;
 
