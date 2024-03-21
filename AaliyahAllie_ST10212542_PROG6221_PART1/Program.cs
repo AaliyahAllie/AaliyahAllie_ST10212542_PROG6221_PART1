@@ -55,7 +55,7 @@
                         {
                             Console.WriteLine("Now Entering Recipe");
                         }
-                        else if (newRecipeConfirmation == "n")
+                        else if (newRecipeConfirmation == "n");
                         {
                             Console.WriteLine("Returning to the main menu.");
                             continue;
@@ -120,6 +120,12 @@
                             Console.WriteLine("Returning to the main menu.");
                             continue;
                         }
+                        if(recipes.Count == 0)
+                        {
+                            Console.WriteLine("THERE IS NO RECIPE");
+                            Console.WriteLine("Returning to main menu");
+                            continue;
+                        }
                         Console.WriteLine("***********************************************");
                         Console.WriteLine("DISPLAYING RECIPE DETAILS:");
                         Console.WriteLine("***********************************************");
@@ -128,6 +134,7 @@
                             recipe.DisplayRecipe();
                             Console.WriteLine();
                         }
+     
                         break;
 
                     case 3:
