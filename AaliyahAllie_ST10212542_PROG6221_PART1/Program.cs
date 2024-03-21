@@ -49,13 +49,13 @@
                 switch(userChoice) 
                 {
                     case 1:
-                        Console.WriteLine("Are you sure you want to enter a new recipe?(y/n)");
-                        string newRecipeConfirmation = Console.ReadLine().ToLower();
-                        if (newRecipeConfirmation == "y")
+                        Console.WriteLine("Are you sure you want to enter a new recipe");
+                        string recipeConfirmation = Console.ReadLine().ToLower();
+                        if (recipeConfirmation == "y")
                         {
-                            Console.WriteLine("Now Entering Recipe");
+                            Console.WriteLine("Now Capturing Recipe");
                         }
-                        else if (newRecipeConfirmation == "n");
+                        else if (recipeConfirmation == "n")
                         {
                             Console.WriteLine("Returning to the main menu.");
                             continue;
