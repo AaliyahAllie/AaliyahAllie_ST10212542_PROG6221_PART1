@@ -1,4 +1,5 @@
 ﻿//Aaliyah Allie ST10212542 PART 1
+//Prog6221 PART 1
 namespace AaliyahAllie_ST10212542_PROG6221_PART1
 {
     //MAIN CLASS
@@ -87,7 +88,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
                         //code works by first asking the sure if they are sure they want to proceed with this selected option,
                         //if yes (y) it will continue to allow them to enter the details,
                         //if not (n) it will go back to the main menu 
-                        Console.WriteLine("Are you sure you want to enter a new recipe");
+                        Console.WriteLine("Are you sure you want to enter a new recipe?(y/n)");
                         string recipeConfirmation = Console.ReadLine().ToLower();
                         //if yes proceeds
                         if (recipeConfirmation == "y")
