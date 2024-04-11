@@ -1,5 +1,5 @@
 Welcome to Recipe App
-Tthis read me file will help you navigate how to run the program using visual studio 2022 and explain exactly how to get each step to run smoothly from beginning to end.
+This read me file will help you navigate how to run the program using visual studio 2022 and explain exactly how to get each step to run smoothly from beginning to end.
 
 How to run the program
 -Firstly open up the file in visual studio code
