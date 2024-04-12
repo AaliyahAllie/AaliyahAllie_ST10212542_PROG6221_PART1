@@ -1,4 +1,6 @@
-Welcome to Recipe App
+LINK TO GIT HUB:
+ https://github.com/AaliyahAllie/AaliyahAllie_ST10212542_PROG6221_PART1
+ Welcome to Recipe App
 This read me file will help you navigate how to run the program using visual studio 2022 and explain exactly how to get each step to run smoothly from beginning to end.
 
 How to run the program
