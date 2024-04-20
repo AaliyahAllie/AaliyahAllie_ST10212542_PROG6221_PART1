@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-//Aaliyah Allie ST10212542 Part 1
-//This class contains the code for capturing and manipulating details of the recipe as given by the users input
-//this part of the program is what the main class will pull from to use in the main code and user interface
-
-namespace AaliyahAllie_ST10212542_PROG6221_PART1
+﻿namespace AaliyahAllie_ST10212542_PROG6221_PART1
 {
     //public class for the recipe details where all the code will be
     public class Recipe
@@ -51,15 +45,26 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             //takes user input and stores into array list <string>
             Steps = new List<string>();
         }
+
         //this method is there to store the properties/details of the ingredients, such as its name,quantities,original quantities and units of measurement
+        // Method to add ingredients to the recipe
         public void AddIngredients(string name, int quantity, string unitOfMeasurement)
         {
+            // If the unit of measurement is tablespoons and the quantity is 8 or more, convert to cups
+            if (unitOfMeasurement.ToLower() == "tablespoons" && quantity >= 8)
+            {
+                // Convert tablespoons to cups (1 cup = 16 tablespoons)
+                quantity = (int)Math.Ceiling((double)quantity / 16);
+                // Update the unit of measurement to cups
+                unitOfMeasurement = "cups";
+            }
+
             // Add the ingredient name to the list of ingredient names
             IngredientNames.Add(name);
             // Add the quantity of the ingredient to the list of ingredient quantities
             IngredientQuantities.Add(quantity);
-           // Add the original quantity of the ingredient to the list of original quantities(for scaling)
-             OriginalQuantities.Add(quantity);
+            // Add the original quantity of the ingredient to the list of original quantities (for scaling)
+            OriginalQuantities.Add(quantity);
             // Add the unit of measurement for the ingredient to the list of unit of measurements
             UnitOfMeasurements.Add(unitOfMeasurement);
         }
@@ -112,7 +117,7 @@ namespace AaliyahAllie_ST10212542_PROG6221_PART1
             for (int i = 0; i < IngredientQuantities.Count; i++)
             {
                 // Scales the quantity of each ingredient by the given factor and cast to int
-                IngredientQuantities[i] = (int)(OriginalQuantities[i] * factor); 
+                IngredientQuantities[i] = (int)(OriginalQuantities[i] * factor);
             }
         }
 
